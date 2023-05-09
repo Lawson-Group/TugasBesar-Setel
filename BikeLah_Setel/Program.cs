@@ -16,7 +16,7 @@ namespace BikeLah_Setel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Akun());
+            Application.Run(new Login());
         }
     }
 }
