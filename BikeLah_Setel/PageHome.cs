@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace BikeLah_Setel
 {
-    public partial class Form1 : Form
+    public partial class PageHome : Form
     {
-        public Form1()
+        public PageHome()
         {
             InitializeComponent();
         }
@@ -33,6 +34,16 @@ namespace BikeLah_Setel
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
