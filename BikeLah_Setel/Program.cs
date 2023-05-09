@@ -16,11 +16,7 @@ namespace BikeLah_Setel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            Application.Run(new PinjamKendaraan());
-
-            Application.Run(new Login());
-
+            Application.Run(new PageHome());
         }
     }
 }
