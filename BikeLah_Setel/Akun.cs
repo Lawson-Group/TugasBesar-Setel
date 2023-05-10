@@ -152,5 +152,65 @@ namespace BikeLah_Setel
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PageHome home = new PageHome();
+            home.Show();
+            Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PagePanduan guide = new PagePanduan();
+            guide.Show();
+            Visible = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            PageHistory history = new PageHistory();
+            history.Show();
+            Visible = false;
+        }
+
+        private void PanelDataCivitas_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DataCivitas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PagePinjam pinjam = new PagePinjam();
+            pinjam.Show();
+            Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            Visible = false;
+        }
     }
 }

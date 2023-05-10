@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Akun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Akun.Designer.cs">
+      <DependentUpon>Akun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageHistory.Designer.cs">
+      <DependentUpon>PageHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="PageHome.cs">
       <SubType>Form</SubType>
@@ -58,14 +70,55 @@
     <Compile Include="PageHome.Designer.cs">
       <DependentUpon>PageHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="PageInfoShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageInfoShelter.designer.cs">
+      <DependentUpon>PageInfoShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagePanduan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagePanduan.Designer.cs">
+      <DependentUpon>PagePanduan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagePinjam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagePinjam.Designer.cs">
+      <DependentUpon>PagePinjam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeminjamanBerhasil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeminjamanBerhasil.Designer.cs">
+      <DependentUpon>PeminjamanBerhasil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Akun.resx">
+      <DependentUpon>Akun.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PageHistory.resx">
+      <DependentUpon>PageHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PageHome.resx">
       <DependentUpon>PageHome.cs</DependentUpon>
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageInfoShelter.resx">
+      <DependentUpon>PageInfoShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagePanduan.resx">
+      <DependentUpon>PagePanduan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagePinjam.resx">
+      <DependentUpon>PagePinjam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeminjamanBerhasil.resx">
+      <DependentUpon>PeminjamanBerhasil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

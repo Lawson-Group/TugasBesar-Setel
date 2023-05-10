@@ -16,5 +16,12 @@ namespace BikeLah_Setel
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PageHome home = new PageHome();
+            home.Show();
+            Visible = false;
+        }
     }
 }
