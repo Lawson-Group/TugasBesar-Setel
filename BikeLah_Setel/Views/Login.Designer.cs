@@ -54,22 +54,22 @@
             // 
             this.textBoxUsername.BackColor = System.Drawing.Color.White;
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxUsername.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(39, 283);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxUsername.Multiline = true;
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(432, 45);
+            this.textBoxUsername.Size = new System.Drawing.Size(432, 47);
             this.textBoxUsername.TabIndex = 4;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.BackColor = System.Drawing.Color.White;
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPassword.Font = new System.Drawing.Font("Inter", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(39, 380);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxPassword.Multiline = true;
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(432, 45);
+            this.textBoxPassword.Size = new System.Drawing.Size(432, 47);
             this.textBoxPassword.TabIndex = 6;
             // 
             // label3
@@ -102,7 +102,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(169, 475);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 39);
             this.button1.TabIndex = 8;
@@ -112,8 +112,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BikeLah_Setel.Properties.Resources.bike__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(169, 14);
+/*            this.pictureBox1.Image = global::BikeLah_Setel.Properties.Resources.bike__2_;
+*/            this.pictureBox1.Location = new System.Drawing.Point(169, 14);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 154);
@@ -135,7 +135,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Setel";
