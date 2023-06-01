@@ -10,12 +10,5 @@ namespace BikeLah_Setel.Models
     {
         public string NomorSeri { get; set; }
         public string JenisKendaraan { get; set; }
-
-        public Kendaraan() { }
-        public Kendaraan(string nomorSeri, string jenisKendaraan)
-        {
-            NomorSeri = nomorSeri;
-            JenisKendaraan = jenisKendaraan;
-        }
     }
 }

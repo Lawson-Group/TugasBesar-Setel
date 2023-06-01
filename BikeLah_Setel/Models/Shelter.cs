@@ -8,13 +8,5 @@ namespace BikeLah_Setel.Models
         public string NamaShelter { get; set; }
         public string LokasiShelter { get; set; }
         public List<Kendaraan> KendaraanTersedia { get; set; }
-
-        public Shelter(int idShelter, string namaShelter, string lokasiShelter, List<Kendaraan> kendaraanTersedia)
-        {
-            IdShelter = idShelter;
-            NamaShelter = namaShelter;
-            LokasiShelter = lokasiShelter;
-            KendaraanTersedia = kendaraanTersedia;
-        }
     }
 }
