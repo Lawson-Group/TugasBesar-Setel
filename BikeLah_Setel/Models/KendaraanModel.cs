@@ -27,7 +27,7 @@ namespace BikeLah_Setel.Models
         public void ReadJSON()
         {
             // Deserialisasi JSON.
-            string JsonText = File.ReadAllText("C:\\Users\\Aisha\\Downloads\\TubesKPL_BikeLah\\TubesKPL_BikeLah\\BikeLah_Setel\\Models\\dataPeminjaman.json");
+            string JsonText = File.ReadAllText("dataPeminjaman.json");
 
             dynamic JsonObj = JsonConvert.DeserializeObject(JsonText);
 
@@ -44,7 +44,7 @@ namespace BikeLah_Setel.Models
             // Memeriksa input NoSeri yang diberikan oleh user.
             if (NoSeri.Equals(NomorSeri))
             {
-                Kendaraan Vhc = new Kendaraan(NomorSeri, JenisKendaraan);
+                Kendaraan Vhc = new Kendaraan();
 
                 Contract.Ensures(Contract.Result<Kendaraan>() != null);
                 Contract.Ensures(Vhc != null);

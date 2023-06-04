@@ -38,7 +38,8 @@ namespace BikeLah_Setel.Models
             NomorSeriKendaraan = JsonObj.dataPeminjaman.nomorSeri;
             NamaPeminjam = JsonObj2.userLogin.username;
         }
-        public void TambahPeminjaman(List<Peminjaman> dataPinjam, int id, string nomorSeri, DateTime waktuPinjam, DateTime waktuKembali, string namaPeminjam, bool status)
+        public void TambahPeminjaman(List<Peminjaman> dataPinjam, int id, string nomorSeri, 
+            DateTime waktuPinjam, DateTime waktuKembali, string namaPeminjam, bool status)
         {
             Peminjaman PinjamanBaru = new Peminjaman
             {

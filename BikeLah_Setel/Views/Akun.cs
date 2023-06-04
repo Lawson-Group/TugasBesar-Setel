@@ -1,8 +1,11 @@
-﻿using System;
+﻿using BikeLah_Setel.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +19,9 @@ namespace BikeLah_Setel
         public Akun()
         {
             InitializeComponent();
+            namaLengkapUser.Text = UserSession.userSession.dataUser.dataCivitas.namaLengkap;
+            NomorIDUser.Text = UserSession.userSession.dataUser.dataCivitas.id;
+
         }
 
         private void Akun_Load(object sender, EventArgs e)
@@ -135,12 +141,23 @@ namespace BikeLah_Setel
 
         private void EditData_Click(object sender, EventArgs e)
         {
-
+            namaLengkapUser.ReadOnly = false;
         }
 
         private void SimpanData_Click(object sender, EventArgs e)
         {
+            foreach (User user in DataGlobal.dataUser)
+            {
+                if (UserSession.userSession.username.Equals(user.username))
+                {
+                    user.dataUser.dataCivitas.namaLengkap = namaLengkapUser.Text;
+                   
+                }
+            }
+            String dataUserJson = JsonConvert.SerializeObject(DataGlobal.dataUser, Formatting.Indented);
+            File.WriteAllText("userLogin.json", dataUserJson);
 
+            namaLengkapUser.ReadOnly = true;
         }
 
         private void AkunSideBar_Click(object sender, EventArgs e)
