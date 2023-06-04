@@ -91,13 +91,17 @@
   <ItemGroup>
     <Compile Include="Controllers\KendaraanController.cs" />
     <Compile Include="Controllers\PeminjamanController.cs" />
+    <Compile Include="Models\DataCivitas.cs" />
     <Compile Include="Models\DataGlobal.cs" />
+    <Compile Include="Models\DataPribadi.cs" />
     <Compile Include="Models\Kendaraan.cs" />
     <Compile Include="Models\KendaraanModel.cs" />
     <Compile Include="Models\Peminjaman.cs" />
     <Compile Include="Models\PeminjamanModel.cs" />
     <Compile Include="Models\Shelter.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserData.cs" />
+    <Compile Include="Models\UserSession.cs" />
     <Compile Include="Views\Akun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,8 +186,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Models\dataPeminjaman.json" />
-    <None Include="Models\userLogin.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
