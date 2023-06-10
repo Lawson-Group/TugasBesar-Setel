@@ -1,11 +1,8 @@
-﻿using System;
+﻿using BikeLah_Setel.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace BikeLah_Setel
@@ -15,13 +12,34 @@ namespace BikeLah_Setel
         public PagePinjam()
         {
             InitializeComponent();
+
+/*            comboBox1.SelectedItem = UserSession.Peminjaman.jenisKendaraan;
+            textBox3.Text = UserSession.Peminjaman.nomorSeri;
+            comboBox2.SelectedItem = UserSession.Peminjaman.ShelterAwal;
+            comboBox3.SelectedItem = UserSession.Peminjaman.ShelterAkhir;
+*/
+            /*string dataPeminjamanString = File.ReadAllText("dataPeminjaman.json");
+            DataGlobal.dataPeminjaman = JsonConvert.DeserializeObject<List<Peminjaman>>(dataPeminjamanString);*/
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            /*for (int i = 0; i < DataGlobal.dataKendaraan.Count; i++)
+            {
+                if (comboBox1.SelectedIndex.Equals(DataGlobal.dataKendaraan[i].JenisKendaraan))
+                {
+                    if (textBox3.Text.Equals(DataGlobal.dataKendaraan[i].NomorSeri))
+                    {
+
+                    }
+                }
+            }*/
+
             PeminjamanBerhasil success = new PeminjamanBerhasil();
             success.Show();
             Visible = true;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,6 +80,11 @@ namespace BikeLah_Setel
         private void PagePinjam_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

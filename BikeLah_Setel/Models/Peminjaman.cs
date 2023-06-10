@@ -14,6 +14,10 @@ namespace BikeLah_Setel.Models
         public DateTime WaktuPengembalian { get; set; }
         public string NamaPeminjam { get; set; }
         public bool StatusPengembalian { get; set; }
+        public string ShelterAwal { get; set; }
+        public string ShelterAkhir { get; set; }
+        public string nomorSeri { get; set; }
+        public string jenisKendaraan { get; set; }
 
     }
 }

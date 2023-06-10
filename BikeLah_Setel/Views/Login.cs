@@ -20,7 +20,7 @@ namespace BikeLah_Setel
             /*string dataKendaraanString = File.ReadAllText("KendaraanData.json");
             DataGlobal.dataKendaraan = JsonConvert.DeserializeObject<List<Kendaraan>>(dataKendaraanString);
 
-            string dataPeminjamanString = File.ReadAllText("PeminjamanData.json");
+            string dataPeminjamanString = File.ReadAllText("dataPeminjaman.json");
             DataGlobal.dataPeminjaman = JsonConvert.DeserializeObject<List<Peminjaman>>(dataPeminjamanString);
 
             string dataShelterString = File.ReadAllText("ShelterData.json");
